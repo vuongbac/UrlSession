@@ -14,6 +14,9 @@
 		5EDC00E024FCE47800B7E5DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EDC00DE24FCE47800B7E5DC /* LaunchScreen.storyboard */; };
 		5EDC00EB24FCE47800B7E5DC /* ApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDC00EA24FCE47800B7E5DC /* ApiTests.swift */; };
 		5EDC00F624FCE47800B7E5DC /* ApiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDC00F524FCE47800B7E5DC /* ApiUITests.swift */; };
+		5EDC010724FCF19300B7E5DC /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDC010624FCF19300B7E5DC /* Data.swift */; };
+		5EDC010D24FCF5B900B7E5DC /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDC010B24FCF5B900B7E5DC /* TableViewCell.swift */; };
+		5EDC010E24FCF5B900B7E5DC /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EDC010C24FCF5B900B7E5DC /* TableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		5EDC00F124FCE47800B7E5DC /* ApiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EDC00F524FCE47800B7E5DC /* ApiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUITests.swift; sourceTree = "<group>"; };
 		5EDC00F724FCE47800B7E5DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EDC010624FCF19300B7E5DC /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		5EDC010B24FCF5B900B7E5DC /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		5EDC010C24FCF5B900B7E5DC /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,8 @@
 		5EDC00D424FCE47700B7E5DC /* Api */ = {
 			isa = PBXGroup;
 			children = (
+				5EDC010A24FCF5A100B7E5DC /* cell */,
+				5EDC010524FCF16600B7E5DC /* Model */,
 				5EDC00D524FCE47700B7E5DC /* AppDelegate.swift */,
 				5EDC00D724FCE47700B7E5DC /* ViewController.swift */,
 				5EDC00D924FCE47700B7E5DC /* Main.storyboard */,
@@ -123,6 +131,23 @@
 				5EDC00F724FCE47800B7E5DC /* Info.plist */,
 			);
 			path = ApiUITests;
+			sourceTree = "<group>";
+		};
+		5EDC010524FCF16600B7E5DC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5EDC010624FCF19300B7E5DC /* Data.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5EDC010A24FCF5A100B7E5DC /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				5EDC010B24FCF5B900B7E5DC /* TableViewCell.swift */,
+				5EDC010C24FCF5B900B7E5DC /* TableViewCell.xib */,
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EDC00E024FCE47800B7E5DC /* LaunchScreen.storyboard in Resources */,
+				5EDC010E24FCF5B900B7E5DC /* TableViewCell.xib in Resources */,
 				5EDC00DD24FCE47800B7E5DC /* Assets.xcassets in Resources */,
 				5EDC00DB24FCE47700B7E5DC /* Main.storyboard in Resources */,
 			);
@@ -256,7 +282,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EDC010D24FCF5B900B7E5DC /* TableViewCell.swift in Sources */,
 				5EDC00D824FCE47700B7E5DC /* ViewController.swift in Sources */,
+				5EDC010724FCF19300B7E5DC /* Data.swift in Sources */,
 				5EDC00D624FCE47700B7E5DC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
